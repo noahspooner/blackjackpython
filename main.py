@@ -794,7 +794,7 @@ def start_game():
         # If player hits something else
 
         else:
-                print ("Please press 'h' or 's'.")
+                start_game()
 
 # Game ends here
 
