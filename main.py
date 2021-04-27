@@ -490,7 +490,7 @@ def start_game():
                 elif chosen_card == "jack_heart":
                         print ("Jack of Hearts")
 
-                        added_value = 11
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -502,7 +502,7 @@ def start_game():
                 elif chosen_card == "jack_diamond":
                         print ("Jack of Diamonds")
 
-                        added_value = 11
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -514,7 +514,7 @@ def start_game():
                 elif chosen_card == "jack_club":
                         print ("Jack of Clubs")
 
-                        added_value = 11
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -526,7 +526,7 @@ def start_game():
                 elif chosen_card == "jack_spade":
                         print ("Jack of Spades")
 
-                        added_value = 11
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -538,7 +538,7 @@ def start_game():
                 elif chosen_card == "queen_heart":
                         print ("Queen of Hearts")
 
-                        added_value = 12
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -550,7 +550,7 @@ def start_game():
                 elif chosen_card == "queen_diamond":
                         print ("Queen of Diamonds")
 
-                        added_value = 12
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -562,7 +562,7 @@ def start_game():
                 elif chosen_card == "queen_club":
                         print ("Queen of Clubs")
 
-                        added_value = 12
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -574,7 +574,7 @@ def start_game():
                 elif chosen_card == "queen_spade":
                         print ("Queen of Spades")
 
-                        added_value = 12
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -586,7 +586,7 @@ def start_game():
                 elif chosen_card == "king_heart":
                         print ("King of Hearts")
 
-                        added_value = 13
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -598,7 +598,7 @@ def start_game():
                 elif chosen_card == "king_diamond":
                         print ("King of Diamonds")
 
-                        added_value = 13
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -610,7 +610,7 @@ def start_game():
                 elif chosen_card == "king_club":
                         print ("King of Clubs")
 
-                        added_value = 13
+                        added_value = 10
 
                         hand = hand + added_value
 
@@ -622,7 +622,7 @@ def start_game():
                 elif chosen_card == "king_spade":
                         print ("King of Spades")
 
-                        added_value = 13
+                        added_value = 10
 
                         hand = hand + added_value
 
