@@ -842,13 +842,22 @@ def show_rules():
 # Rules end here
 
 
-play_rules = input ()
+def choose_play_rules ():
 
-if play_rules == "play":
-        start_game()
-elif play_rules == "rules":
-        show_rules()
-else:
-        print ("Please type 'play' or 'rules'.")
+        play_rules = input ()
 
-print("\n")
+        if play_rules == "play":
+                start_game()
+        elif play_rules == "rules":
+                show_rules()
+        else:
+                print("\n")
+
+                print ("Please type 'play' or 'rules'.")
+
+                choose_play_rules()
+        
+        print("\n")
+
+
+y = choose_play_rules ()
