@@ -41,26 +41,6 @@ def start_game():
         added_value = 0
 
 
-        # To determine the value of aces
-
-        def determine_ace_value():
-
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                elif ace_value == "11":
-                        added_value = 11
-
-                else:
-                        determine_ace_value()
-
-
         print("\n")
 
 
@@ -266,19 +246,75 @@ def start_game():
 
         elif first_card_drawn == "ace_heart":
                 first_card_drawn = "Ace of Hearts"
-                determine_ace_value()
+
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+                
 
         elif first_card_drawn == "ace_diamond":
                 first_card_drawn = "Ace of Diamonds"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         elif first_card_drawn == "ace_club":
                 first_card_drawn = "Ace of Clubs"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         elif first_card_drawn == "ace_spade":
                 first_card_drawn = "Ace of Spades"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         hand = hand + added_value
 
@@ -479,19 +515,75 @@ def start_game():
 
         elif second_card_drawn == "ace_heart":
                 second_card_drawn = "Ace of Hearts"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         elif second_card_drawn == "ace_diamond":
                 second_card_drawn = "Ace of Diamonds"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         elif second_card_drawn == "ace_club":
                 second_card_drawn = "Ace of Clubs"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         elif second_card_drawn == "ace_spade":
                 second_card_drawn = "Ace of Spades"
-                determine_ace_value()
+                
+                print("\n")
+
+                print ("Do you want your Ace to be worth 1 or 11?")
+                print ("Type '1' for your Ace to be worth 1.")
+                print ("Type anything else for your Ace to be worth 11.")
+
+                ace_value = input()
+
+                if ace_value == "1":
+                        added_value = 1
+
+                else:
+                        added_value = 11
+
 
         hand = hand + added_value
         
@@ -719,19 +811,74 @@ def start_game():
 
                 elif chosen_card == "ace_heart":
                         print ("Ace of Hearts")
-                        determine_ace_value()
+                        
+                        print("\n")
+
+                        print ("Do you want your Ace to be worth 1 or 11?")
+                        print ("Type '1' for your Ace to be worth 1.")
+                        print ("Type anything else for your Ace to be worth 11.")
+
+                        ace_value = input()
+
+                        if ace_value == "1":
+                                added_value = 1
+
+                        else:
+                                added_value = 11
+
 
                 elif chosen_card == "ace_diamond":
                         print ("Ace of Diamonds")
-                        determine_ace_value()
+                        
+                        print("\n")
+
+                        print ("Do you want your Ace to be worth 1 or 11?")
+                        print ("Type '1' for your Ace to be worth 1.")
+                        print ("Type anything else for your Ace to be worth 11.")
+
+                        ace_value = input()
+
+                        if ace_value == "1":
+                                added_value = 1
+
+                        else:
+                                added_value = 11
+
 
                 elif chosen_card == "ace_club":
                         print ("Ace of Clubs")
-                        determine_ace_value()
+                        
+                        print("\n")
+
+                        print ("Do you want your Ace to be worth 1 or 11?")
+                        print ("Type '1' for your Ace to be worth 1.")
+                        print ("Type anything else for your Ace to be worth 11.")
+
+                        ace_value = input()
+
+                        if ace_value == "1":
+                                added_value = 1
+
+                        else:
+                                added_value = 11
+
 
                 elif chosen_card == "ace_spade":
                         print ("Ace of Spades")
-                        determine_ace_value()
+                        
+                        print("\n")
+
+                        print ("Do you want your Ace to be worth 1 or 11?")
+                        print ("Type '1' for your Ace to be worth 1.")
+                        print ("Type anything else for your Ace to be worth 11.")
+
+                        ace_value = input()
+
+                        if ace_value == "1":
+                                added_value = 1
+
+                        else:
+                                added_value = 11
 
 
                 # This should not happen, but if it does, it means that something went wrong and there was an error
