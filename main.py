@@ -1,4 +1,5 @@
 import random
+import os
 
 deck = ["ace_heart", "ace_diamond", "ace_club", "ace_spade", 
         "two_heart", "two_diamond", "two_club", "two_spade",
@@ -588,6 +589,8 @@ def start_game():
         hand = hand + added_value
         
 
+        os.system('cls' if os.name == 'nt' else 'clear')
+
         print ("The dealer deals you a",first_card_drawn,"and a",second_card_drawn,".")
 
         print("\n")
@@ -613,6 +616,10 @@ def start_game():
                 # If player 'hits'
 
                 if h_s == "h":
+                        os.system('cls' if os.name == 'nt' else 'clear')
+
+                        print("\n")
+
                         print ("hit!")
 
                         print("\n")
@@ -891,6 +898,8 @@ def start_game():
                 # If player 'stands'
 
                 elif h_s == "s":
+                        os.system('cls' if os.name == 'nt' else 'clear')
+                        print("\n")
                         print ("stand!")
                         print("\n")
                         exit()
@@ -911,6 +920,14 @@ def start_game():
 
                 print ("The total value of your cards is:")
                 print (hand)
+
+
+        if hand == 21:
+                print("\n")
+                print ("You Win!")
+        else:
+                print("\n")
+                print ("You Lose!")
 
 # Game ends here
 
