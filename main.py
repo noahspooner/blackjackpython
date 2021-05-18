@@ -591,6 +591,23 @@ def start_game():
 
         print("\n")
 
+
+        # If player get's a Blackjack
+
+        if ( (first_card_drawn == "Ace of Hearts" or first_card_drawn == "Ace of Diamonds" or first_card_drawn == "Ace of Clubs" or first_card_drawn == "Ace of Spades") and (second_card_drawn == "Ten of Hearts" or second_card_drawn == "Ten of Diamonds" or second_card_drawn == "Ten of Clubs" or second_card_drawn == "Ten of Spades" or second_card_drawn == "Jack of Hearts" or second_card_drawn == "Jack of Diamonds" or second_card_drawn == "Jack of Clubs" or second_card_drawn == "Jack of Spades" or second_card_drawn == "Queen of Hearts" or second_card_drawn == "Queen of Diamonds" or second_card_drawn == "Queen of Clubs" or second_card_drawn == "Queen of Spades" or second_card_drawn == "King of Hearts" or second_card_drawn == "King of Diamonds" or second_card_drawn == "King of Clubs" or second_card_drawn == "King of Spades") ) or ( (first_card_drawn == "Ten of Hearts" or first_card_drawn == "Ten of Diamonds" or first_card_drawn == "Ten of Clubs" or first_card_drawn == "Ten of Spades" or first_card_drawn == "Jack of Hearts" or first_card_drawn == "Jack of Diamonds" or first_card_drawn == "Jack of Clubs" or first_card_drawn == "Jack of Spades" or first_card_drawn == "Queen of Hearts" or first_card_drawn == "Queen of Diamonds" or first_card_drawn == "Queen of Clubs" or first_card_drawn == "Queen of Spades" or first_card_drawn == "King of Hearts" or first_card_drawn == "King of Diamonds" or first_card_drawn == "King of Clubs" or first_card_drawn == "King of Spades") and (second_card_drawn == "Ace of Hearts" or second_card_drawn == "Ace of Diamonds" or second_card_drawn == "Ace of Clubs" or second_card_drawn == "Ace of Spades") ):
+                print ("That's a Blackjack!")
+
+                print("\n")
+                print ("You Win!")
+                print("\n")
+
+                exit ()
+        else:
+                pass
+
+
+        # Prints the value of the player's hand
+
         print ("The total value of your cards is:")
         print (hand)
 
