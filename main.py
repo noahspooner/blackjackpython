@@ -24,13 +24,9 @@ print ("          Welcome to BlackJack!!!")
 print ("******************************************")
 print("\n")
 
-print ("Please press enter to continue.")
-
-input()
-
-print ("Hello, ")
 print ("Type 'play' to start playing.")
 print ("Type 'rules' to look at the rules.")
+print ("Type 'exit' to exit.")
 
 
 # Game starts here
@@ -983,22 +979,34 @@ def show_rules():
 # Rules end here
 
 
-def choose_play_rules ():
+def choose_play_rules_exit ():
 
-        play_rules = input ()
+        play_rules_exit = input ()
 
-        if play_rules == "play":
+
+        if play_rules_exit == "play":
                 start_game()
-        elif play_rules == "rules":
+
+        elif play_rules_exit == "rules":
                 show_rules()
+
+        elif play_rules_exit == "exit":
+                print("\n")
+
+                print ("Have a nice day!")
+
+                print("\n")
+
+                exit()
+
         else:
                 print("\n")
 
-                print ("Please type 'play' or 'rules'.")
+                print ("Please type 'play', 'rules', or 'exit'.")
 
-                choose_play_rules()
+                choose_play_rules_exit()
         
         print("\n")
 
 
-y = choose_play_rules ()
+y = choose_play_rules_exit ()
