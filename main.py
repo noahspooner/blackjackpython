@@ -13,7 +13,7 @@ deck = ["ace_heart", "ace_diamond", "ace_club", "ace_spade",
         "ten_heart", "ten_diamond", "ten_club", "ten_spade",
         "jack_heart", "jack_diamond", "jack_club", "jack_spade",
         "queen_heart", "queen_diamond", "queen_club", "queen_spade",
-        "queen_heart", "queen_diamond", "queen_club", "queen_spade",]
+        "king_heart", "king_diamond", "king_club", "king_spade",]
 
 
 # What you see in terminal starts here
@@ -41,11 +41,14 @@ def start_game():
         print("\n")
 
 
-        # First two cards drawn
+        # To pick and remove the first two cards from the deck
 
         first_card_drawn = random.choice(deck)
+        deck.remove(first_card_drawn)
 
         second_card_drawn = random.choice(deck)
+        deck.remove(second_card_drawn)
+
 
         # To determine the value of the first card drawn
 
@@ -638,6 +641,9 @@ def start_game():
                         print("\n")
 
                         chosen_card = random.choice(deck)
+
+                        deck.remove(chosen_card)
+
 
                         if chosen_card == "two_heart":
                                 print ("Two of Hearts")
