@@ -980,7 +980,7 @@ def show_rules():
 
         print("\n")
 
-        print("Type 'play' when you are ready to play.")
+        print("Type 'play' when you are ready to play or type 'exit' to exit the program.")
 
 
         def exit_rules():
@@ -988,9 +988,15 @@ def show_rules():
 
                 if type_play == "play":
                         start_game()
+                elif type_play == "exit":
+                        print("\n")
+                        print ("Have a good day!")
+                        print("\n")
+
+                        exit()
                 else:
                         print("\n")
-                        print("Please type 'play' to start the game.")
+                        print("Please type 'play' or 'exit'.")
 
                         exit_rules()
 
