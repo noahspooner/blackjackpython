@@ -33,21 +33,35 @@ print ("Type 'exit' to exit.")
 
 def start_game():
 
+        # Player variables
         hand = 0
 
         added_value = 0
 
 
+        # Dealer variables
+        dealer_hand = 0
+
+        added_value_dealer = 0
+
+
         print("\n")
 
 
-        # To pick and remove the first two cards from the deck
+        # To pick and remove the first two cards drawn from the deck for the player and the dealer
 
         first_card_drawn = random.choice(deck)
         deck.remove(first_card_drawn)
 
         second_card_drawn = random.choice(deck)
         deck.remove(second_card_drawn)
+
+
+        first_card_drawn_dealer = random.choice(deck)
+        deck.remove(first_card_drawn_dealer)
+
+        second_card_drawn_dealer = random.choice(deck)
+        deck.remove(second_card_drawn_dealer)
 
 
         # To determine the value of the first card drawn
@@ -586,8 +600,463 @@ def start_game():
 
 
         hand = hand + added_value
+
+
+        # To determine the value of the first card drawn by the dealer
+
+        if first_card_drawn_dealer == "two_heart":
+                first_card_drawn_dealer = "Two of Hearts"
+                added_value_dealer = 2
+
+        elif first_card_drawn_dealer == "two_diamond":
+                first_card_drawn_dealer = "Two of Diamonds"
+                added_value_dealer = 2
+
+        elif first_card_drawn_dealer == "two_club":
+                first_card_drawn_dealer = "Two of Clubs"
+                added_value_dealer = 2
+
+        elif first_card_drawn_dealer == "two_spade":
+                first_card_drawn_dealer = "Two of Spades"
+                added_value_dealer = 2
+
+        elif first_card_drawn_dealer == "three_heart":
+                first_card_drawn_dealer = "Three of Hearts"
+                added_value_dealer = 3
+
+        elif first_card_drawn_dealer == "three_diamond":
+                first_card_drawn_dealer = "Three of Diamonds"
+                added_value_dealer = 3
+
+        elif first_card_drawn_dealer == "three_club":
+                first_card_drawn_dealer = "Three of Clubs"
+                added_value_dealer = 3
+
+        elif first_card_drawn_dealer == "three_spade":
+                first_card_drawn_dealer = "Three of Spades"
+                added_value_dealer = 3
+
+        elif first_card_drawn_dealer == "four_heart":
+                first_card_drawn_dealer = "Four of Hearts"
+                added_value_dealer = 4
+
+        elif first_card_drawn_dealer == "four_diamond":
+                first_card_drawn_dealer = "Four of Diamonds"
+                added_value_dealer = 4
+
+        elif first_card_drawn_dealer == "four_club":
+                first_card_drawn_dealer = "Four of Clubs"
+                added_value_dealer = 4
+
+        elif first_card_drawn_dealer == "four_spade":
+                first_card_drawn_dealer = "Four of Spades"
+                added_value_dealer = 4
+
+        elif first_card_drawn_dealer == "five_heart":
+                first_card_drawn_dealer = "Five of Hearts"
+                added_value_dealer = 5
+
+        elif first_card_drawn_dealer == "five_diamond":
+                first_card_drawn_dealer = "Five of Diamonds"
+                added_value_dealer = 5
+
+        elif first_card_drawn_dealer == "five_club":
+                first_card_drawn_dealer = "Five of Clubs"
+                added_value_dealer = 5
+
+        elif first_card_drawn_dealer == "five_spade":
+                first_card_drawn_dealer = "Five of Spades"
+                added_value_dealer = 5
+
+        elif first_card_drawn_dealer == "six_heart":
+                first_card_drawn_dealer = "Six of Hearts"
+                added_value_dealer = 6
+
+        elif first_card_drawn_dealer == "six_diamond":
+                first_card_drawn_dealer = "Six of Diamonds"
+                added_value_dealer = 6
+
+        elif first_card_drawn_dealer == "six_club":
+                first_card_drawn_dealer = "Six of Clubs"
+                added_value_dealer = 6
+
+        elif first_card_drawn_dealer == "six_spade":
+                first_card_drawn_dealer = "Six of Spades"
+                added_value_dealer = 6
+
+        elif first_card_drawn_dealer == "seven_heart":
+                first_card_drawn_dealer = "Seven of Hearts"
+                added_value_dealer = 7
+
+        elif first_card_drawn_dealer == "seven_diamond":
+                first_card_drawn_dealer = "Seven of Diamonds"
+                added_value_dealer = 7
+
+        elif first_card_drawn_dealer == "seven_club":
+                first_card_drawn_dealer = "Seven of Clubs"
+                added_value_dealer = 7
+
+        elif first_card_drawn_dealer == "seven_spade":
+                first_card_drawn_dealer = "Seven of Spades"
+                added_value_dealer = 7
+
+        elif first_card_drawn_dealer == "eight_heart":
+                first_card_drawn_dealer = "Eight of Hearts"
+                added_value_dealer = 8
+
+        elif first_card_drawn_dealer == "eight_diamond":
+                first_card_drawn_dealer = "Eight of Diamonds"
+                added_value_dealer = 8
+
+        elif first_card_drawn_dealer == "eight_club":
+                first_card_drawn_dealer = "Eight of Clubs"
+                added_value_dealer = 8
+
+        elif first_card_drawn_dealer == "eight_spade":
+                first_card_drawn_dealer = "Eight of Spades"
+                added_value_dealer = 8
+
+        elif first_card_drawn_dealer == "nine_heart":
+                first_card_drawn_dealer = "Nine of Hearts"
+                added_value_dealer = 9
+
+        elif first_card_drawn_dealer == "nine_diamond":
+                first_card_drawn_dealer = "Nine of Diamonds"
+                added_value_dealer = 9
+
+        elif first_card_drawn_dealer == "nine_club":
+                first_card_drawn_dealer = "Nine of Clubs"
+                added_value_dealer = 9
+
+        elif first_card_drawn_dealer == "nine_spade":
+                first_card_drawn_dealer = "Nine of Spades"
+                added_value_dealer = 9
+
+        elif first_card_drawn_dealer == "ten_heart":
+                first_card_drawn_dealer = "Ten of Hearts"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "ten_diamond":
+                first_card_drawn_dealer = "Ten of Diamonds"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "ten_club":
+                first_card_drawn_dealer = "Ten of Clubs"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "ten_spade":
+                first_card_drawn_dealer = "Ten of Spades"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "jack_heart":
+                first_card_drawn_dealer = "Jack of Hearts"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "jack_diamond":
+                first_card_drawn_dealer = "Jack of Diamonds"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "jack_club":
+                first_card_drawn_dealer = "Jack of Clubs"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "jack_spade":
+                first_card_drawn_dealer = "Jack of Spades"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "queen_heart":
+                first_card_drawn_dealer = "Queen of Hearts"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "queen_diamond":
+                first_card_drawn_dealer = "Queen of Diamonds"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "queen_club":
+                first_card_drawn_dealer = "Queen of Clubs"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "queen_spade":
+                first_card_drawn_dealer = "Queen of Spades"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "king_heart":
+                first_card_drawn_dealer = "King of Hearts"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "king_diamond":
+                first_card_drawn_dealer = "King of Diamonds"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "king_club":
+                first_card_drawn_dealer = "King of Clubs"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "king_spade":
+                first_card_drawn_dealer = "King of Spades"
+                added_value_dealer = 10
+
+        elif first_card_drawn_dealer == "ace_heart":
+                first_card_drawn_dealer = "Ace of Hearts"
+                added_value_dealer = 11
+                
+
+        elif first_card_drawn_dealer == "ace_diamond":
+                first_card_drawn_dealer = "Ace of Diamonds"
+                added_value_dealer = 11
+
+
+        elif first_card_drawn_dealer == "ace_club":
+                first_card_drawn_dealer = "Ace of Clubs"
+                added_value_dealer = 11
+
+
+        elif first_card_drawn_dealer == "ace_spade":
+                first_card_drawn_dealer = "Ace of Spades"
+                added_value_dealer = 11
+
+
+        dealer_hand = dealer_hand + added_value_dealer
+
+
+        # To determine the value of the second card drawn by the dealer
+
+        if second_card_drawn_dealer == "two_heart":
+                second_card_drawn_dealer = "Two of Hearts"
+                added_value_dealer = 2
+
+        elif second_card_drawn_dealer == "two_diamond":
+                second_card_drawn_dealer = "Two of Diamonds"
+                added_value_dealer = 2
+
+        elif second_card_drawn_dealer == "two_club":
+                second_card_drawn_dealer = "Two of Clubs"
+                added_value_dealer = 2
+
+        elif second_card_drawn_dealer == "two_spade":
+                second_card_drawn_dealer = "Two of Spades"
+                added_value_dealer = 2
+
+        elif second_card_drawn_dealer == "three_heart":
+                second_card_drawn_dealer = "Three of Hearts"
+                added_value_dealer = 3
+
+        elif second_card_drawn_dealer == "three_diamond":
+                second_card_drawn_dealer = "Three of Diamonds"
+                added_value_dealer = 3
+
+        elif second_card_drawn_dealer == "three_club":
+                second_card_drawn_dealer = "Three of Clubs"
+                added_value_dealer = 3
+
+        elif second_card_drawn_dealer == "three_spade":
+                second_card_drawn_dealer = "Three of Spades"
+                added_value_dealer = 3
+
+        elif second_card_drawn_dealer == "four_heart":
+                second_card_drawn_dealer = "Four of Hearts"
+                added_value_dealer = 4
+
+        elif second_card_drawn_dealer == "four_diamond":
+                second_card_drawn_dealer = "Four of Diamonds"
+                added_value_dealer = 4
+
+        elif second_card_drawn_dealer == "four_club":
+                second_card_drawn_dealer = "Four of Clubs"
+                added_value_dealer = 4
+
+        elif second_card_drawn_dealer == "four_spade":
+                second_card_drawn_dealer = "Four of Spades"
+                added_value_dealer = 4
+
+        elif second_card_drawn_dealer == "five_heart":
+                second_card_drawn_dealer = "Five of Hearts"
+                added_value_dealer = 5
+
+        elif second_card_drawn_dealer == "five_diamond":
+                second_card_drawn_dealer = "Five of Diamonds"
+                added_value_dealer = 5
+
+        elif second_card_drawn_dealer == "five_club":
+                second_card_drawn_dealer = "Five of Clubs"
+                added_value_dealer = 5
+
+        elif second_card_drawn_dealer == "five_spade":
+                second_card_drawn_dealer = "Five of Spades"
+                added_value_dealer = 5
+
+        elif second_card_drawn_dealer == "six_heart":
+                second_card_drawn_dealer = "Six of Hearts"
+                added_value_dealer = 6
+
+        elif second_card_drawn_dealer == "six_diamond":
+                second_card_drawn_dealer = "Six of Diamonds"
+                added_value_dealer = 6
+
+        elif second_card_drawn_dealer == "six_club":
+                second_card_drawn_dealer = "Six of Clubs"
+                added_value_dealer = 6
+
+        elif second_card_drawn_dealer == "six_spade":
+                second_card_drawn_dealer = "Six of Spades"
+                added_value_dealer = 6
+
+        elif second_card_drawn_dealer == "seven_heart":
+                second_card_drawn_dealer = "Seven of Hearts"
+                added_value_dealer = 7
+
+        elif second_card_drawn_dealer == "seven_diamond":
+                second_card_drawn_dealer = "Seven of Diamonds"
+                added_value_dealer = 7
+
+        elif second_card_drawn_dealer == "seven_club":
+                second_card_drawn_dealer = "Seven of Clubs"
+                added_value_dealer = 7
+
+        elif second_card_drawn_dealer == "seven_spade":
+                second_card_drawn_dealer = "Seven of Spades"
+                added_value_dealer = 7
+
+        elif second_card_drawn_dealer == "eight_heart":
+                second_card_drawn_dealer = "Eight of Hearts"
+                added_value_dealer = 8
+
+        elif second_card_drawn_dealer == "eight_diamond":
+                second_card_drawn_dealer = "Eight of Diamonds"
+                added_value_dealer = 8
+
+        elif second_card_drawn_dealer == "eight_club":
+                second_card_drawn_dealer = "Eight of Clubs"
+                added_value_dealer = 8
+
+        elif second_card_drawn_dealer == "eight_spade":
+                second_card_drawn_dealer = "Eight of Spades"
+                added_value_dealer = 8
+
+        elif second_card_drawn_dealer == "nine_heart":
+                second_card_drawn_dealer = "Nine of Hearts"
+                added_value_dealer = 9
+
+        elif second_card_drawn_dealer == "nine_diamond":
+                second_card_drawn_dealer = "Nine of Diamonds"
+                added_value_dealer = 9
+
+        elif second_card_drawn_dealer == "nine_club":
+                second_card_drawn_dealer = "Nine of Clubs"
+                added_value_dealer = 9
+
+        elif second_card_drawn_dealer == "nine_spade":
+                second_card_drawn_dealer = "Nine of Spades"
+                added_value_dealer = 9
+
+        elif second_card_drawn_dealer == "ten_heart":
+                second_card_drawn_dealer = "Ten of Hearts"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "ten_diamond":
+                second_card_drawn_dealer = "Ten of Diamonds"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "ten_club":
+                second_card_drawn_dealer = "Ten of Clubs"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "ten_spade":
+                second_card_drawn_dealer = "Ten of Spades"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "jack_heart":
+                second_card_drawn_dealer = "Jack of Hearts"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "jack_diamond":
+                second_card_drawn_dealer = "Jack of Diamonds"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "jack_club":
+                second_card_drawn_dealer = "Jack of Clubs"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "jack_spade":
+                second_card_drawn_dealer = "Jack of Spades"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "queen_heart":
+                second_card_drawn_dealer = "Queen of Hearts"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "queen_diamond":
+                second_card_drawn_dealer = "Queen of Diamonds"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "queen_club":
+                second_card_drawn_dealer = "Queen of Clubs"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "queen_spade":
+                second_card_drawn_dealer = "Queen of Spades"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "king_heart":
+                second_card_drawn_dealer = "King of Hearts"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "king_diamond":
+                second_card_drawn_dealer = "King of Diamonds"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "king_club":
+                second_card_drawn_dealer = "King of Clubs"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "king_spade":
+                second_card_drawn_dealer = "King of Spades"
+                added_value_dealer = 10
+
+        elif second_card_drawn_dealer == "ace_heart":
+
+                second_card_drawn_dealer = "Ace of Hearts"
+
+                if dealer_hand <= 10:
+                        added_value_dealer = 11
+                else:
+                        added_value_dealer = 1
+                
+
+        elif second_card_drawn_dealer == "ace_diamond":
+
+                second_card_drawn_dealer = "Ace of Diamonds"
+
+                if dealer_hand <= 10:
+                        added_value_dealer = 11
+                else:
+                        added_value_dealer = 1
+
+
+        elif second_card_drawn_dealer == "ace_club":
+
+                second_card_drawn_dealer = "Ace of Clubs"
+
+                if dealer_hand <= 10:
+                        added_value_dealer = 11
+                else:
+                        added_value_dealer = 1
+   
+
+        elif second_card_drawn_dealer == "ace_spade":
+
+                second_card_drawn_dealer = "Ace of Spades"
+
+                if dealer_hand <= 10:
+                        added_value_dealer = 11
+                else:
+                        added_value_dealer = 1
+
+
+        dealer_hand = dealer_hand + added_value_dealer
         
 
+        # Prints the names of the first two cards drawn by the player.
         os.system('cls' if os.name == 'nt' else 'clear')
 
         print ("The dealer deals you a",first_card_drawn,"and a",second_card_drawn,".")
@@ -613,6 +1082,13 @@ def start_game():
 
         print ("The total value of your cards is:")
         print (hand)
+
+
+        # Prints the name of the first card drawn by the dealer.
+
+        print("\n")
+
+        print ("The dealer draws a",first_card_drawn_dealer,"and another card that is hidden.")
 
 
 
