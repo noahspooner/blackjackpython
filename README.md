@@ -1,14 +1,13 @@
 # blackjackpython
 blackjackpython is a simple Blackjack game written in Python that you can play on the command line. 
 
+
 Discalimers: 
 
 This game of Blackjack contains no money and no gambling in any way, shape, or form. 
 If you do not like this, you can play another Blackjack game that does include gambling, or you can fork this repository and add the gambling software yourself.
 
 You must have Python 3 to run this.
-
-This project is still in development and might not work.
 
 
 How to play:
