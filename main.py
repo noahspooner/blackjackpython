@@ -1069,15 +1069,27 @@ def start_game():
         # If player get's a Blackjack
 
         if ( (first_card_drawn == "Ace of Hearts" or first_card_drawn == "Ace of Diamonds" or first_card_drawn == "Ace of Clubs" or first_card_drawn == "Ace of Spades") and (second_card_drawn == "Ten of Hearts" or second_card_drawn == "Ten of Diamonds" or second_card_drawn == "Ten of Clubs" or second_card_drawn == "Ten of Spades" or second_card_drawn == "Jack of Hearts" or second_card_drawn == "Jack of Diamonds" or second_card_drawn == "Jack of Clubs" or second_card_drawn == "Jack of Spades" or second_card_drawn == "Queen of Hearts" or second_card_drawn == "Queen of Diamonds" or second_card_drawn == "Queen of Clubs" or second_card_drawn == "Queen of Spades" or second_card_drawn == "King of Hearts" or second_card_drawn == "King of Diamonds" or second_card_drawn == "King of Clubs" or second_card_drawn == "King of Spades") ) or ( (first_card_drawn == "Ten of Hearts" or first_card_drawn == "Ten of Diamonds" or first_card_drawn == "Ten of Clubs" or first_card_drawn == "Ten of Spades" or first_card_drawn == "Jack of Hearts" or first_card_drawn == "Jack of Diamonds" or first_card_drawn == "Jack of Clubs" or first_card_drawn == "Jack of Spades" or first_card_drawn == "Queen of Hearts" or first_card_drawn == "Queen of Diamonds" or first_card_drawn == "Queen of Clubs" or first_card_drawn == "Queen of Spades" or first_card_drawn == "King of Hearts" or first_card_drawn == "King of Diamonds" or first_card_drawn == "King of Clubs" or first_card_drawn == "King of Spades") and (second_card_drawn == "Ace of Hearts" or second_card_drawn == "Ace of Diamonds" or second_card_drawn == "Ace of Clubs" or second_card_drawn == "Ace of Spades") ):
+                
                 print ("That's a Blackjack!")
 
                 print("\n")
                 print ("You Win!")
                 print("\n")
 
-                exit ()
-        else:
-                pass
+                print ("Would you like to play again?")
+                print ("Type 'yes' play again?")
+                print ("Type anything else to exit.")
+
+                yes_no = input ()
+
+                if yes_no == "yes":
+                        start_game ()
+                else:
+                        print("\n")
+                        print ("Have a nice day!")
+                        print ("\n")
+
+                        exit()
 
 
         # Prints the value of the player's hand
@@ -1704,8 +1716,8 @@ def start_game():
 
                         print ("\n")
                         print ("Would you like to play again?")
-                        print ("If so; type 'yes'.")
-                        print ("If not; type anything else.")
+                        print ("Type 'yes' play again?")
+                        print ("Type anything else to exit.")
 
                         yes_no = input ()
 
@@ -1713,6 +1725,9 @@ def start_game():
                                 start_game ()
                         else:
                                 print("\n")
+                                print ("Have a nice day!")
+                                print ("\n")
+
                                 exit()
 
 
@@ -1748,8 +1763,8 @@ def start_game():
         
         print ("\n")
         print ("Would you like to play again?")
-        print ("If so; type 'yes'.")
-        print ("If not; type anything else.")
+        print ("Type 'yes' play again?")
+        print ("Type anything else to exit.")
 
         yes_no = input ()
 
@@ -1757,6 +1772,9 @@ def start_game():
                 start_game ()
         else:
                 print("\n")
+                print ("Have a nice day!")
+                print ("\n")
+
                 exit()
 
 
