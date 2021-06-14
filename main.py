@@ -1687,7 +1687,7 @@ def start_game():
 
                         if dealer_hand == 21:
                                 print("\n")
-                                print ("The Dealer Wins!")
+                                print ("You lose!")
                         elif dealer_hand > 21:
                                 print ("\n")
                                 print ("You win!")
@@ -1699,10 +1699,22 @@ def start_game():
                                 else:
                                         print ("It's a tie.")
 
-                                print ("\n")
                                 
+                        # To ask the player if they want to play again.
 
-                        exit()
+                        print ("\n")
+                        print ("Would you like to play again?")
+                        print ("If so; type 'yes'.")
+                        print ("If not; type anything else.")
+
+                        yes_no = input ()
+
+                        if yes_no == "yes":
+                                start_game ()
+                        else:
+                                print("\n")
+                                exit()
+
 
                 # If player hits something else
 
@@ -1722,12 +1734,31 @@ def start_game():
                 print (hand)
 
 
+        # If player's hand exceeds 20.
+
         if hand == 21:
                 print("\n")
                 print ("You Win!")
         else:
                 print("\n")
                 print ("You Lose!")
+
+
+        # To ask the player if they want to play again.
+        
+        print ("\n")
+        print ("Would you like to play again?")
+        print ("If so; type 'yes'.")
+        print ("If not; type anything else.")
+
+        yes_no = input ()
+
+        if yes_no == "yes":
+                start_game ()
+        else:
+                print("\n")
+                exit()
+
 
 # Game ends here
 
