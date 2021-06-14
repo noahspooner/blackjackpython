@@ -18,6 +18,8 @@ deck = ["ace_heart", "ace_diamond", "ace_club", "ace_spade",
 
 # What you see in terminal starts here
 
+os.system('cls' if os.name == 'nt' else 'clear')
+
 print("\n")
 print ("******************************************")
 print ("          Welcome to BlackJack!!!")
@@ -1394,9 +1396,312 @@ def start_game():
 
                 elif h_s == "s":
                         os.system('cls' if os.name == 'nt' else 'clear')
+
+
                         print("\n")
                         print ("stand!")
                         print("\n")
+
+
+                        print ("The dealer reveals their second card.")
+                        print("\n")
+                        print (f"It's a {second_card_drawn_dealer}.")
+                        print("\n")
+                        print (f"The dealer has a {first_card_drawn_dealer} and a {second_card_drawn_dealer}.")
+                        print("\n")
+                        print (f"The total value of their hand is {dealer_hand}.")
+                        print ("\n")
+                        print (f"The total value of your hand is {hand}.")
+                        print ("\n")
+
+                        
+                        # Dealer hits if necessary.
+
+                        if dealer_hand < 17:
+                                print ("The dealer must keep hitting until they reach a total hand value of 17 or more.")
+                                print("\n")
+
+                                
+                                while dealer_hand < 17:
+                                        print ("Press ENTER to continue.")
+                                        input ()
+                                        print("\n")
+
+                                        os.system('cls' if os.name == 'nt' else 'clear')
+
+                                        print("\n")
+                                        print ("hit!")
+                                        print("\n")
+
+                                        chosen_card_dealer = random.choice(deck)
+
+                                        deck.remove(chosen_card_dealer)
+
+
+                                        if chosen_card_dealer == "two_heart":
+                                                chosen_card_dealer = "Two of Hearts"
+                                                added_value_dealer = 2
+
+                                        elif chosen_card_dealer == "two_diamond":
+                                                chosen_card_dealer = "Two of Diamonds"
+                                                added_value_dealer = 2
+
+                                        elif chosen_card_dealer == "two_club":
+                                                chosen_card_dealer = "Two of Clubs"
+                                                added_value_dealer = 2
+
+                                        elif chosen_card_dealer == "two_spade":
+                                                chosen_card_dealer = "Two of Spades"
+                                                added_value_dealer = 2
+
+                                        elif chosen_card_dealer == "three_heart":
+                                                chosen_card_dealer = "Three of Hearts"
+                                                added_value_dealer = 3
+
+                                        elif chosen_card_dealer == "three_diamond":
+                                                chosen_card_dealer = "Three of Diamonds"
+                                                added_value_dealer = 3
+
+                                        elif chosen_card_dealer == "three_club":
+                                                chosen_card_dealer = "Three of Clubs"
+                                                added_value_dealer = 3
+
+                                        elif chosen_card_dealer == "three_spade":
+                                                chosen_card_dealer = "Three of Spades"
+                                                added_value_dealer = 3
+
+                                        elif chosen_card_dealer == "four_heart":
+                                                chosen_card_dealer = "Four of Hearts"
+                                                added_value_dealer = 4
+
+                                        elif chosen_card_dealer == "four_diamond":
+                                                chosen_card_dealer = "Four of Diamonds"
+                                                added_value_dealer = 4
+
+                                        elif chosen_card_dealer == "four_club":
+                                                chosen_card_dealer = "Four of Clubs"
+                                                added_value_dealer = 4
+
+                                        elif chosen_card_dealer == "four_spade":
+                                                chosen_card_dealer = "Four of Spades"
+                                                added_value_dealer = 4
+
+                                        elif chosen_card_dealer == "five_heart":
+                                                chosen_card_dealer = "Five of Hearts"
+                                                added_value_dealer = 5
+
+                                        elif chosen_card_dealer == "five_diamond":
+                                                chosen_card_dealer = "Five of Diamonds"
+                                                added_value_dealer = 5
+
+                                        elif chosen_card_dealer == "five_club":
+                                                chosen_card_dealer = "Five of Clubs"
+                                                added_value_dealer = 5
+
+                                        elif chosen_card_dealer == "five_spade":
+                                                chosen_card_dealer = "Five of Spades"
+                                                added_value_dealer = 5
+
+                                        elif chosen_card_dealer == "six_heart":
+                                                chosen_card_dealer = "Six of Hearts"
+                                                added_value_dealer = 6
+
+                                        elif chosen_card_dealer == "six_diamond":
+                                                chosen_card_dealer = "Six of Diamonds"
+                                                added_value_dealer = 6
+
+                                        elif chosen_card_dealer == "six_club":
+                                                chosen_card_dealer = "Six of Clubs"
+                                                added_value_dealer = 6
+
+                                        elif chosen_card_dealer == "six_spade":
+                                                chosen_card_dealer = "Six of Spades"
+                                                added_value_dealer = 6
+
+                                        elif chosen_card_dealer == "seven_heart":
+                                                chosen_card_dealer = "Seven of Hearts"
+                                                added_value_dealer = 7
+
+                                        elif chosen_card_dealer == "seven_diamond":
+                                                chosen_card_dealer = "Seven of Diamonds"
+                                                added_value_dealer = 7
+
+                                        elif chosen_card_dealer == "seven_club":
+                                                chosen_card_dealer = "Seven of Clubs"
+                                                added_value_dealer = 7
+
+                                        elif chosen_card_dealer == "seven_spade":
+                                                chosen_card_dealer = "Seven of Spades"
+                                                added_value_dealer = 7
+
+                                        elif chosen_card_dealer == "eight_heart":
+                                                chosen_card_dealer = "Eight of Hearts"
+                                                added_value_dealer = 8
+
+                                        elif chosen_card_dealer == "eight_diamond":
+                                                chosen_card_dealer = "Eight of Diamonds"
+                                                added_value_dealer = 8
+
+                                        elif chosen_card_dealer == "eight_club":
+                                                chosen_card_dealer = "Eight of Clubs"
+                                                added_value_dealer = 8
+
+                                        elif chosen_card_dealer == "eight_spade":
+                                                chosen_card_dealer = "Eight of Spades"
+                                                added_value_dealer = 8
+
+                                        elif chosen_card_dealer == "nine_heart":
+                                                chosen_card_dealer = "Nine of Hearts"
+                                                added_value_dealer = 9
+
+                                        elif chosen_card_dealer == "nine_diamond":
+                                                chosen_card_dealer = "Nine of Diamonds"
+                                                added_value_dealer = 9
+
+                                        elif chosen_card_dealer == "nine_club":
+                                                chosen_card_dealer = "Nine of Clubs"
+                                                added_value_dealer = 9
+
+                                        elif chosen_card_dealer == "nine_spade":
+                                                chosen_card_dealer = "Nine of Spades"
+                                                added_value_dealer = 9
+
+                                        elif chosen_card_dealer == "ten_heart":
+                                                chosen_card_dealer = "Ten of Hearts"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "ten_diamond":
+                                                chosen_card_dealer = "Ten of Diamonds"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "ten_club":
+                                                chosen_card_dealer = "Ten of Clubs"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "ten_spade":
+                                                chosen_card_dealer = "Ten of Spades"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "jack_heart":
+                                                chosen_card_dealer = "Jack of Hearts"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "jack_diamond":
+                                                chosen_card_dealer = "Jack of Diamonds"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "jack_club":
+                                                chosen_card_dealer = "Jack of Clubs"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "jack_spade":
+                                                chosen_card_dealer = "Jack of Spades"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "queen_heart":
+                                                chosen_card_dealer = "Queen of Hearts"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "queen_diamond":
+                                                chosen_card_dealer = "Queen of Diamonds"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "queen_club":
+                                                chosen_card_dealer = "Queen of Clubs"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "queen_spade":
+                                                chosen_card_dealer = "Queen of Spades"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "king_heart":
+                                                chosen_card_dealer = "King of Hearts"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "king_diamond":
+                                                chosen_card_dealer = "King of Diamonds"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "king_club":
+                                                chosen_card_dealer = "King of Clubs"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "king_spade":
+                                                chosen_card_dealer = "King of Spades"
+                                                added_value_dealer = 10
+
+                                        elif chosen_card_dealer == "ace_heart":
+
+                                                chosen_card_dealer = "Ace of Hearts"
+
+                                                if dealer_hand <= 10:
+                                                        added_value_dealer = 11
+                                                else:
+                                                        added_value_dealer = 1
+                                                
+
+                                        elif chosen_card_dealer == "ace_diamond":
+
+                                                chosen_card_dealer = "Ace of Diamonds"
+
+                                                if dealer_hand <= 10:
+                                                        added_value_dealer = 11
+                                                else:
+                                                        added_value_dealer = 1
+
+
+                                        elif chosen_card_dealer == "ace_club":
+
+                                                chosen_card_dealer = "Ace of Clubs"
+
+                                                if dealer_hand <= 10:
+                                                        added_value_dealer = 11
+                                                else:
+                                                        added_value_dealer = 1
+                                
+
+                                        elif chosen_card_dealer == "ace_spade":
+
+                                                chosen_card_dealer = "Ace of Spades"
+
+                                                if dealer_hand <= 10:
+                                                        added_value_dealer = 11
+                                                else:
+                                                        added_value_dealer = 1
+
+
+                                        print (chosen_card_dealer)
+                                        print ("\n")
+
+
+                                        # To calculate the value of the dealer's hand
+
+                                        dealer_hand = dealer_hand + added_value_dealer
+
+                                        print (f"The total value of the dealer's hand is {dealer_hand}.")
+                                        print ("\n")
+
+                        
+
+                        # To determine who wins.
+
+                        if dealer_hand == 21:
+                                print("\n")
+                                print ("The Dealer Wins!")
+                        elif dealer_hand > 21:
+                                print ("\n")
+                                print ("You win!")
+                        else:
+                                if hand > dealer_hand:
+                                        print ("You win!")
+                                elif hand < dealer_hand:
+                                        print ("You lose!")
+                                else:
+                                        print ("It's a tie.")
+
+                                print ("\n")
+                                
+
                         exit()
 
                 # If player hits something else
