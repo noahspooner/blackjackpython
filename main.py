@@ -262,74 +262,19 @@ def start_game():
 
         elif first_card_drawn == "ace_heart":
                 first_card_drawn = "Ace of Hearts"
-
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
-                        added_value = 11
+                added_value = 11
                 
-
         elif first_card_drawn == "ace_diamond":
                 first_card_drawn = "Ace of Diamonds"
-                
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
-                        added_value = 11
-
+                added_value = 11
 
         elif first_card_drawn == "ace_club":
                 first_card_drawn = "Ace of Clubs"
-                
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
-                        added_value = 11
-
+                added_value = 11
 
         elif first_card_drawn == "ace_spade":
                 first_card_drawn = "Ace of Spades"
-                
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
-                        added_value = 11
+                added_value = 11
 
 
         hand = hand + added_value
@@ -530,75 +475,43 @@ def start_game():
                 added_value = 10
 
         elif second_card_drawn == "ace_heart":
+
                 second_card_drawn = "Ace of Hearts"
                 
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
+                if hand <= 10:
                         added_value = 11
+                else:
+                        added_value = 1
 
 
         elif second_card_drawn == "ace_diamond":
+
                 second_card_drawn = "Ace of Diamonds"
                 
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
+                if hand <= 10:
                         added_value = 11
+                else:
+                        added_value = 1
 
 
         elif second_card_drawn == "ace_club":
+
                 second_card_drawn = "Ace of Clubs"
-                
-                print("\n")
 
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
+                if hand <= 10:
                         added_value = 11
-
+                else:
+                        added_value = 1
+                
 
         elif second_card_drawn == "ace_spade":
+
                 second_card_drawn = "Ace of Spades"
                 
-                print("\n")
-
-                print ("Do you want your Ace to be worth 1 or 11?")
-                print ("Type '1' for your Ace to be worth 1.")
-                print ("Type anything else for your Ace to be worth 11.")
-
-                ace_value = input()
-
-                if ace_value == "1":
-                        added_value = 1
-
-                else:
+                if hand <= 10:
                         added_value = 11
+                else:
+                        added_value = 1
 
 
         hand = hand + added_value
@@ -1068,7 +981,7 @@ def start_game():
 
         # If player get's a Blackjack
 
-        if ( (first_card_drawn == "Ace of Hearts" or first_card_drawn == "Ace of Diamonds" or first_card_drawn == "Ace of Clubs" or first_card_drawn == "Ace of Spades") and (second_card_drawn == "Ten of Hearts" or second_card_drawn == "Ten of Diamonds" or second_card_drawn == "Ten of Clubs" or second_card_drawn == "Ten of Spades" or second_card_drawn == "Jack of Hearts" or second_card_drawn == "Jack of Diamonds" or second_card_drawn == "Jack of Clubs" or second_card_drawn == "Jack of Spades" or second_card_drawn == "Queen of Hearts" or second_card_drawn == "Queen of Diamonds" or second_card_drawn == "Queen of Clubs" or second_card_drawn == "Queen of Spades" or second_card_drawn == "King of Hearts" or second_card_drawn == "King of Diamonds" or second_card_drawn == "King of Clubs" or second_card_drawn == "King of Spades") ) or ( (first_card_drawn == "Ten of Hearts" or first_card_drawn == "Ten of Diamonds" or first_card_drawn == "Ten of Clubs" or first_card_drawn == "Ten of Spades" or first_card_drawn == "Jack of Hearts" or first_card_drawn == "Jack of Diamonds" or first_card_drawn == "Jack of Clubs" or first_card_drawn == "Jack of Spades" or first_card_drawn == "Queen of Hearts" or first_card_drawn == "Queen of Diamonds" or first_card_drawn == "Queen of Clubs" or first_card_drawn == "Queen of Spades" or first_card_drawn == "King of Hearts" or first_card_drawn == "King of Diamonds" or first_card_drawn == "King of Clubs" or first_card_drawn == "King of Spades") and (second_card_drawn == "Ace of Hearts" or second_card_drawn == "Ace of Diamonds" or second_card_drawn == "Ace of Clubs" or second_card_drawn == "Ace of Spades") ):
+        if hand == 21:
                 
                 print ("That's a Blackjack!")
 
@@ -1328,75 +1241,43 @@ def start_game():
                                 added_value = 10
 
                         elif chosen_card == "ace_heart":
+
                                 print ("Ace of Hearts")
                                 
-                                print("\n")
-
-                                print ("Do you want your Ace to be worth 1 or 11?")
-                                print ("Type '1' for your Ace to be worth 1.")
-                                print ("Type anything else for your Ace to be worth 11.")
-
-                                ace_value = input()
-
-                                if ace_value == "1":
-                                        added_value = 1
-
-                                else:
+                                if hand <= 10:
                                         added_value = 11
+                                else:
+                                        added_value = 1
 
 
                         elif chosen_card == "ace_diamond":
+
                                 print ("Ace of Diamonds")
                                 
-                                print("\n")
-
-                                print ("Do you want your Ace to be worth 1 or 11?")
-                                print ("Type '1' for your Ace to be worth 1.")
-                                print ("Type anything else for your Ace to be worth 11.")
-
-                                ace_value = input()
-
-                                if ace_value == "1":
-                                        added_value = 1
-
-                                else:
+                                if hand <= 10:
                                         added_value = 11
+                                else:
+                                        added_value = 1
 
 
                         elif chosen_card == "ace_club":
+
                                 print ("Ace of Clubs")
                                 
-                                print("\n")
-
-                                print ("Do you want your Ace to be worth 1 or 11?")
-                                print ("Type '1' for your Ace to be worth 1.")
-                                print ("Type anything else for your Ace to be worth 11.")
-
-                                ace_value = input()
-
-                                if ace_value == "1":
-                                        added_value = 1
-
-                                else:
+                                if hand <= 10:
                                         added_value = 11
+                                else:
+                                        added_value = 1
 
 
                         elif chosen_card == "ace_spade":
+
                                 print ("Ace of Spades")
                                 
-                                print("\n")
-
-                                print ("Do you want your Ace to be worth 1 or 11?")
-                                print ("Type '1' for your Ace to be worth 1.")
-                                print ("Type anything else for your Ace to be worth 11.")
-
-                                ace_value = input()
-
-                                if ace_value == "1":
-                                        added_value = 1
-
-                                else:
+                                if hand <= 10:
                                         added_value = 11
+                                else:
+                                        added_value = 1
 
 
                         # This should not happen, but if it does, it means that something went wrong and there was an error
@@ -1790,7 +1671,7 @@ def show_rules():
         print("\n")
 
         print ("The goal of BlackJack is to get as close to 21 as possible without going over it.")
-        print ("Cards 2 through 10 are worth their face value, royal cards are each worth 10 and Aces can either be worth 1 or 11 based on the player's choosing.")
+        print ("Cards 2 through 10 are worth their face value, royal cards are each worth 10 and Aces are either worth 1 or 11 based on whatever's best for the player.")
         print ("Note: Jokers are not present in this game.")
         print ("You start the game with 2 cards and the dealer also starts with 2 cards but you can only see one of their cards.")
         print ("If the first two cards you are given are an Ace and a card with a value of 10, that's a Blackjack.")
